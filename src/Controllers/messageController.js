@@ -1,15 +1,18 @@
 exports.create = async (req, res) => {
-    res.send('Create Message API');
+
+    res.status(201).json({ status: 'success', data: 'Created a Message' });
 };
 
 exports.read = async (req, res) => {
-    res.send('Read Message API');
+    res.status(200).json({ status: 'success', data: 'Read a Message' });
 };
 
 exports.delete = async (req, res) => {
-    res.send('Delete Message API');
+
+    res.status(204).json({ status: 'success', data: null });
 };
 
 exports.update = async (req, res) => {
-    res.send('Update Message API');
+
+    res.status(200).json({ status: 'success', data: 'Updated a Message' });
 };

@@ -1,15 +1,18 @@
 exports.create = async (req, res) => {
-    res.send('Create Portfolio API');
+
+    res.status(201).json({ status: 'success', data: 'Created a Portfolio' });
 };
 
 exports.read = async (req, res) => {
-    res.send('Read Portfolio API');
+    res.status(200).json({ status: 'success', data: 'Read a Portfolio' });
 };
 
 exports.delete = async (req, res) => {
-    res.send('Delete Portfolio API');
+
+    res.status(204).json({ status: 'success', data: null });
 };
 
 exports.update = async (req, res) => {
-    res.send('Update Portfolio API');
+
+    res.status(200).json({ status: 'success', data: 'Updated a Portfolio' });
 };

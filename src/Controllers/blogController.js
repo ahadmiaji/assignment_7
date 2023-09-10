@@ -1,17 +1,18 @@
 exports.create = async (req, res) => {
-  res.send(`Create Blog API`);
- };
 
-exports.read = async (req, res) => { 
-    res.send(`Read Blog API`);
+    res.status(201).json({ status: 'success', data: 'Created a blog' });
 };
 
+exports.read = async (req, res) => {
+    res.status(200).json({ status: 'success', data: 'Read a blog' });
+};
 
 exports.delete = async (req, res) => {
-    res.send(`Delete Blog API`);
- };
 
+    res.status(204).json({ status: 'success', data: null });
+};
 
-exports.update = async (req, res) => { 
-    res.send(`Update Blog API`);
+exports.update = async (req, res) => {
+
+    res.status(200).json({ status: 'success', data: 'Updated a blog' });
 };

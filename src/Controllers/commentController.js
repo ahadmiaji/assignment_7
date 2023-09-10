@@ -1,15 +1,18 @@
 exports.create = async (req, res) => {
-    res.send('Create Comment API');
+
+    res.status(201).json({ status: 'success', data: 'Created a comment' });
 };
 
 exports.read = async (req, res) => {
-    res.send('Read Comment API');
+    res.status(200).json({ status: 'success', data: 'Read a comment' });
 };
 
 exports.delete = async (req, res) => {
-    res.send('Delete Comment API');
+
+    res.status(204).json({ status: 'success', data: null });
 };
 
 exports.update = async (req, res) => {
-    res.send('Update Comment API');
+
+    res.status(200).json({ status: 'success', data: 'Updated a comment' });
 };
